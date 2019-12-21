@@ -10,7 +10,7 @@ const (
 	RedisHost     = "localhost"
 	RedisPort     = 6379
 	RedisPassword = ""
-	DB            = 0
+	RedisDB       = 0
 )
 
 func Example() {
@@ -18,7 +18,7 @@ func Example() {
 	client := redis.NewClient(&redis.Options{
 		Addr:     fmt.Sprintf("%s:%d", RedisHost, RedisPort),
 		Password: RedisPassword,
-		DB:       DB,
+		DB:       RedisDB,
 	})
 	// 连接测试
 	if _, err := client.Ping().Result(); err != nil {

@@ -7,18 +7,18 @@ import (
 )
 
 const (
-	RedisHost     = "localhost"
-	RedisPort     = 6379
-	RedisPassword = ""
-	RedisDB       = 0
+	Host     = "localhost"
+	Port     = 6379
+	Password = ""
+	DB       = 0
 )
 
 func Example() {
 	// 创建 client
 	client := redis.NewClient(&redis.Options{
-		Addr:     fmt.Sprintf("%s:%d", RedisHost, RedisPort),
-		Password: RedisPassword,
-		DB:       RedisDB,
+		Addr:     fmt.Sprintf("%s:%d", Host, Port),
+		Password: Password,
+		DB:       DB,
 	})
 	// 连接测试
 	if _, err := client.Ping().Result(); err != nil {

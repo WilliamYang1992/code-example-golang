@@ -8,6 +8,7 @@ require (
 	github.com/go-playground/universal-translator v0.17.0 // indirect
 	github.com/go-redis/redis/v7 v7.0.0-beta.4
 	github.com/go-sql-driver/mysql v1.4.1
+	github.com/go-xorm/xorm v0.7.9
 	github.com/json-iterator/go v1.1.9 // indirect
 	github.com/kataras/iris/v12 v12.1.2
 	github.com/klauspost/compress v1.9.4 // indirect
@@ -21,4 +22,5 @@ require (
 	google.golang.org/appengine v1.6.5 // indirect
 	gopkg.in/go-playground/validator.v9 v9.30.2 // indirect
 	gopkg.in/yaml.v2 v2.2.7 // indirect
+	xorm.io/core v0.7.2 // indirect
 )
